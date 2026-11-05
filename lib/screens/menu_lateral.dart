@@ -7,6 +7,8 @@ import 'enlace5.dart';
 import 'enlace6.dart';
 import 'enlace7.dart';
 import 'enlace8.dart';
+import 'enlace9.dart';
+import 'enlace10.dart';
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
 
@@ -94,6 +96,22 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => const Enlace8()));
             },
+          ),
+          ListTile(
+            title: const Text("Ejercicio 10"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => const Enlace9()));
+            }
+          ),
+           ListTile(
+            title: const Text("Ejercicio 11"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => const Enlace10()));
+            }
           )
         ],
       ),
